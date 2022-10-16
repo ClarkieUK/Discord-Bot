@@ -113,8 +113,6 @@ def masteryPull(name):
     return [names, points, levels, imgs]
 
 def ranksPull(summoner):
-
-
     summonerData = RIOT_Watcher.league.by_summoner(RIOT_Platform,summoner[3])
 
     calls = {0:"queueType", 1:"tier", 2:"rank", 3:"leaguePoints", 4:"wins", 5:"losses"}
